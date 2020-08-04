@@ -1,0 +1,99 @@
+  a{
+      text-decoration: none;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      max-width: 1824px;
+  }
+
+  body{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Nunito', sans-serif;
+
+}
+
+header{
+    top:0;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 2.1rem;
+    font-weight: 900;
+    color:white;
+    background: #2c3e50;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index: 10;
+}
+
+.header-container{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*----- APP STYLES -----*/
+
+#app{
+    margin-top:100px;
+    width: 50%;
+    min-width: 500px;
+    height: 85vh;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Poppins', sans-serif;
+    position:relative;
+    background: url('udemy/src/assets/wood-bg-min.jpg')
+  }
+  
+  .overlay{
+    position:absolute;
+    background: rgba(88, 71, 28, 0.22);
+    width:100%;
+    height:100%;
+  }
+
+
+  /*----- CARDS STYLES -----*/
+
+  .cards-wrap{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.card{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    font-size: 11rem;
+    font-weight: 800;
+    width: 200px;
+    height: 300px;
+    z-index:4;
+  }
+
+button{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    font-size: 1.2rem;
+    padding: 15px;
+    cursor: pointer;
+}
+  
+
